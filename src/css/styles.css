@@ -10,11 +10,51 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  text-align: center;
+  background-image: url('../img/white-g31202a380_640.png');
+  background-size: 120px;
+  background-repeat: repeat;
 }
 
 #search-box {
   font: inherit;
   padding: 8px;
   max-width: 320px;
+  margin-top: 32px;
   margin-bottom: 16px;
+  margin-right: auto;
 }
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+.list-box {
+  /* background-color: white; */
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 30%;
+  text-align: left;
+  
+  padding: 10px  23px  10px 23px;
+}
+
+.country-item{
+display: flex;
+justify-content: left;
+}
+
+p {
+  margin: 0;
+}
+
+/* .country {
+  color: #212121;
+  line-height: 1.5;
+  font-size: 32px;
+} */
