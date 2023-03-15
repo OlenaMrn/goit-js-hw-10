@@ -2,19 +2,14 @@ const API_URL = 'https://restcountries.com/v2/';
 const FIELDS = 'name,capital,population,flags,languages';
 
 function fetchCountries(name) {
-  const url = `${API_URL}name/${name}?fields=${FIELDS}`;
-    
+  const url = `https://restcountries.com/v2/name/${name}?fields=name,capital,population,flags,languages`;
   return fetch(url).then(response => {
+    if (!response.ok) {
+      throw new Error('Country not found');
+    }
     return response.json();
+    
   });
 }
-  // .then(country => {
-  //   console.log(country);
-  // })
-  // .catch(error => {
-  //   console.log = console.error();
-  // });
-
-
 
 export { fetchCountries };
