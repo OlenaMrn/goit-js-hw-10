@@ -34,19 +34,23 @@ img {
   margin-right: 10px;
 }
 
+h2,
+h3 {
+  margin: 0;
+}
 .list-box {
   /* background-color: white; */
   margin-right: auto;
   margin-left: auto;
   max-width: 30%;
   text-align: left;
-  
-  padding: 10px  23px  10px 23px;
+
+  padding: 10px 23px 10px 23px;
 }
 
-.country-item{
-display: flex;
-justify-content: left;
+.country-item {
+  display: flex;
+  justify-content: left;
 }
 
 p {
@@ -55,34 +59,30 @@ p {
 
 .country-list {
   display: flex;
- flex-direction: column;
-  justify-content: center;
-  align-items: center; 
-}
-
-/* 
-.info {
-  display: flex;
-  flex-direction: column; 
-} */
-/* стилі для карточки країни */
-
-.card-box {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+}
+
+.card-box {
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   margin-bottom: 20px;
-  width: 33.3%;
+  /* min-width: 33.3%; */
+}
+
+.titel {
+  display: flex;
+  justify-content: left;
 }
 
 .card-box img {
   display: inline-flex;
-  margin-right: 10px;
+  margin-right: 20px;
   width: 60px;
   height: 40px;
 }
@@ -90,7 +90,7 @@ p {
 .card-box h2 {
   display: flex;
   align-items: center;
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 10px;
 }
 
@@ -98,7 +98,7 @@ p {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .card-box .info li {
@@ -112,11 +112,5 @@ p {
 }
 
 .card-box .info li span {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.card-box .info li p {
-  font-size: 16px;
-  margin: 0;
+  font-size: 20px;
 }
