@@ -9,8 +9,6 @@ import { fetchCountries } from './fetchCountries.js';
 // import { addMarkup } from './addMarkup.js';
 // import { inputRef } from './refs.js';
 
-
-
 const inputRef = document.querySelector('#search-box');
 const countriesListRef = document.querySelector('.country-list');
 const countryCardRef = document.querySelector('.country-info');
@@ -22,7 +20,9 @@ function onSearchBox(event) {
   let searchBox = event.target.value.trim();
   if (searchBox !== '') {
     return fetchCountries(searchBox)
-      .then(data => {createMarkup (data)})
+      .then(data => {
+        createMarkup(data);
+      })
       .catch(error => {
         Notify.failure('Oops, there is no country with that name');
       });
@@ -31,10 +31,6 @@ function onSearchBox(event) {
     return;
   }
 }
-
-
-
-
 
 //робить список краін кількістю від 2 до 10
 
