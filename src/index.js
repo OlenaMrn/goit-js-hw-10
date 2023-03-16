@@ -6,9 +6,6 @@ import debounce from 'lodash.debounce';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import { fetchCountries } from './fetchCountries.js';
 
-// import { addMarkup } from './addMarkup.js';
-// import { inputRef } from './refs.js';
-
 const inputRef = document.querySelector('#search-box');
 const countriesListRef = document.querySelector('.country-list');
 const countryCardRef = document.querySelector('.country-info');
@@ -48,6 +45,7 @@ function createCountryList(countries) {
 }
 
 // //робить картку однієі краіни
+
 function createCountryCard(countries) {
   let countryMarkup = countries
     .map(
@@ -90,6 +88,7 @@ function createMarkup(countries) {
 }
 
 //очищає розмітку при очищені інпуту
+
 function clearMarkup() {
   countriesListRef.innerHTML = '';
   countryCardRef.innerHTML = '';
